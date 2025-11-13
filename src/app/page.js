@@ -1,12 +1,11 @@
-import About from "@/components/About";
-import Banner from "@/components/Banner";
-import Header from "@/components/Header";
+import About from "@/components/layouts/About";
+import Banner from "@/components/layouts/Banner";
+
 
 export default function Home({ children }) {
   return (
     <>
       <div>
-       <Header/>
        <Banner/>
        <About/>
         {children}

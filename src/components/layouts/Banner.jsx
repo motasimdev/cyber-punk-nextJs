@@ -1,7 +1,7 @@
 import Image from "next/image";
-import bannerCard from "../assets/bannerCard.png";
-import union from "../assets/Union.png";
-import unionR from "../assets/unionR.png";
+import bannerCard from "../../assets/bannerCard.png";
+import union from "../../assets/Union.png";
+import unionR from "../../assets/unionR.png";
 
 const Banner = () => {
   return (

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/logo.png";
-import union from "../assets/Union.png";
-import unionR from "../assets/unionR.png";
+import logo from "../../assets/logo.png";
+import union from "../../assets/Union.png";
+import unionR from "../../assets/unionR.png";
 
 const Header = () => {
   return (
