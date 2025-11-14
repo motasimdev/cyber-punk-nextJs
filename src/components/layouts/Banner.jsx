@@ -2,12 +2,14 @@ import Image from "next/image";
 import bannerCard from "../../assets/bannerCard.png";
 import union from "../../assets/Union.png";
 import unionR from "../../assets/unionR.png";
+import { montserrat } from "../../../fonts/Font";
+
 
 const Banner = () => {
   return (
     <>
       <section className="pb-16 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
-        <div className="max-w-[1320px] m-auto">
+        <div className={`max-w-[1320px] m-auto ${montserrat.className}`}>
           <div
             className="pt-[680px] pb-[30px] bg-size-[95%_95%] bg-center bg-no-repeat relative before:absolute before:h-[1420px] before:w-px before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:top-0 before:left-0 after:absolute after:h-[1420px] after:w-px after:content-'' after:bg-linear-to-r after:from-[#e03609] after:to-[#f0b71f] after:top-0 after:right-0"
             style={{ backgroundImage: "url('/images/banner.png')" }}
@@ -26,10 +28,10 @@ const Banner = () => {
             <div className="flex">
               <div className="pl-12 w-[46%]">
                 <div className="mb-[300px]">
-                  <li className="text-white text-2xl font-semibold">
+                  <li className={`text-white text-2xl font-semibold`}>
                     Stories & Lore
                   </li>
-                  <p className="font-medium text-base text-white max-w-[230px] pt-4">
+                  <p className="font-medium text-base text-white max-w-[260px] pt-4">
                     Dive into compelling narratives set in a dystopian future.
                   </p>
                 </div>
@@ -54,13 +56,13 @@ const Banner = () => {
               {/* ======================== */}
               <div className="pr-12 w-[54%] mr-auto ">
                 <div className="flex flex-col items-end">
-                  <h3 className="max-w-[200px] text-[36px] text-right text-white ">
+                  <h3 className="max-w-[220px] text-[36px] text-right text-white ">
                     Events and{" "}
                     <span className="font-semibold text-[36px] text-white">
                       Updates
                     </span>
                   </h3>
-                  <p className="max-w-[321px] py-7 font-medium text-lg text-[#dddddd] text-right italic">
+                  <p className="max-w-[340px] py-7 font-medium text-lg text-[#dddddd] text-right italic">
                     Explore the high-tech, low-life world where the lines
                     between humanity and machinery blur.
                   </p>
@@ -69,7 +71,7 @@ const Banner = () => {
                   </button>
                 </div>
 
-                <div className="pl-28 mt-32 py-5 bg-black flex gap-x-6">
+                <div className="pl-28 mt-29 py-5 bg-black flex gap-x-6">
                   <div className="">
                     <h3 className="text-[32px] text-white">Art and</h3>
                     <p className="text-[32px] text-white font-semibold">

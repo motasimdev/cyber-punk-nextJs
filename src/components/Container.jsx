@@ -1,9 +1,9 @@
-import React from 'react'
+"use client"
 
-const {Container} = ({children, className}) => {
+const Container = ({children, className}) => {
   return (
     <div className={`max-w-[1320px] m-auto ${className}`}>{children}</div>
   )
 }
 
-export default {Container}
+export default Container
