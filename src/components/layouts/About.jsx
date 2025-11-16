@@ -37,7 +37,7 @@ const About = () => {
                     Neon Dreams
                   </span>{" "}
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f]">
-                    {" "}
+                    {" "} 
                     & Digital{" "}
                   </span>{" "}
                   Nightmares Converge.
