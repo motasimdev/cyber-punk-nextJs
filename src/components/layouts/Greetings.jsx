@@ -30,13 +30,73 @@ const Greetings = () => {
                 </p>
               </div>
               <div className="">
-                <div className="p-10 bg-black/15 backdrop-blur-md border border-amber-600 rounded-3xl">
-                  <div className="flex gap-3">
-                    <div className="h-4 w-4 bg-[#F0B71F]"></div>
+                <div className="p-10 bg-white/12 backdrop-blur-md border border-amber-600 rounded-3xl ml-16 mt-10">
+                  <div className="flex gap-3 mb-6">
+                    <div className="mt-2 h-3.5 w-3.5 bg-[#F0B71F]"></div>
                     <h5
                       className={`${montserrat.className} text-2xl text-white font-medium pr-14`}
                     >
                       Join the <br /> Revolution
+                    </h5>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      className="size-7"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex gap-3 mb-6">
+                    <div className="mt-2 h-3.5 w-3.5 bg-[#E03609]"></div>
+                    <h5
+                      className={`${montserrat.className} text-2xl text-white font-medium pr-24`}
+                    >
+                      Art and <br /> Design
+                    </h5>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      className="size-7"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex gap-3 mb-6">
+                    <div className="mt-2 h-3.5 w-3.5 bg-[#F0B71F]"></div>
+                    <h5
+                      className={`${montserrat.className} text-2xl text-white font-medium pr-19`}
+                    >
+                      Tech and <br /> Gear
+                    </h5>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      className="size-7"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="mt-2 h-3.5 w-3.5 bg-[#E03609]"></div>
+                    <h5
+                      className={`${montserrat.className} text-2xl text-white font-medium pr-12`}
+                    >
+                     Stories and <br /> Lore
                     </h5>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
