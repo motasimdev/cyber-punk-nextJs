@@ -8,12 +8,11 @@ const About = () => {
   return (
     <>
       <section
-        className={
-          "pt-14 pb-16 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0"
+        className={"pt-14 pb-18 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0"
         }
       >
         <Container>
-          <div className="relative before:absolute before:h-full before:w-px before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:-top-10 before:left-0 after:absolute after:h-full after:w-px after:content-'' after:bg-linear-to-r after:from-[#e03609] after:to-[#f0b71f] after:-top-10 after:right-0">
+          <div className="">
             <div className="flex items-center justify-between px-7 ">
               <div className="w-[50%] py-10">
                 <h3
@@ -85,7 +84,7 @@ const About = () => {
                 <Image src={aboutimg} alt="image" className="w-full" />
               </div>
               {/* ========================== */}
-              <div className="w-[50%] py-10">
+              <div className="w-[50%]">
                 <h3
                   className={`font-bold text-[53px] text-white ${orbitron.className}`}
                 >
@@ -109,13 +108,13 @@ const About = () => {
                   blur.
                 </p>
                 {/* ====== */}
-                <div className="border border-[#F0B71F] rounded-[20px] p-5 flex items-center">
+                <div className="border border-[#F0B71F] rounded-[20px] py-5 pl-7 flex items-center">
                   <div className="">
-                    <Image src={aboutimg2} alt="image" />
+                    <Image src={aboutimg2} alt="image" className="w-full"/>
                   </div>
-                  <div className="text-center w-[40%] m-auto">
+                  <div className="text-center w-[40%] m-auto py-10">
                     <h4 className={`${montserrat} text-white text-2xl pb-4`}>Join the Revolution</h4>
-                    <p className={`${montserrat} text-[#dddddd]`}>Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
+                    <p className={`${montserrat} text-[#dddddd] text-justify`}>Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                   </div>
                 </div>
               </div>

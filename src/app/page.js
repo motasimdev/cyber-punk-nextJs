@@ -1,15 +1,16 @@
 
 import About from "@/components/layouts/About";
 import Banner from "@/components/layouts/Banner";
+import Greetings from "@/components/layouts/Greetings";
 
 
 export default function Home({ children }) {
   return (
     <>
-      <div>
+      <div className="h-full relative">
        <Banner/>
        <About/>
-        {children}
+       <Greetings/>
       </div>
     </>
   );

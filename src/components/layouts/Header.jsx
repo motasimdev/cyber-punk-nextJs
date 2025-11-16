@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <>
       <div className="">
-        <nav className="py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
+        <nav className="-z-50 py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
           <div className="max-w-[1320px] m-auto">
-            <div className="flex items-center justify-between bg-[#010101] px-5 relative before:absolute before:h-[150px] before:w-px before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:top-[-60px] before:left-0 after:absolute after:h-[150px] after:w-px after:content-'' after:bg-linear-to-r after:from-[#e03609] after:to-[#f0b71f] after:top-[-60px] after:right-0">
+            <div className="flex items-center justify-between bg-[#010101] px-5 relative">
               <Image
                 src={union}
                 alt="icon"

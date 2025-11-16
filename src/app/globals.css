@@ -1,10 +1,19 @@
 @import "tailwindcss";
 
-
 @theme {
   --color-midnight: #121063;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background:#010101;
+  background: #010101;
+}
+
+@layer components {
+  .line_left {
+    @apply before:content-[''] before:absolute before:-left-0.5 before:h-full before:w-0.5 before:bg-linear-to-b before:from-[#E03609] before:to-[#F0B71F] z-1000;
+  }
+
+  .line_right {
+    @apply after:content-[''] after:absolute after:-right-0.5 after:h-full after:w-0.5 after:bg-linear-to-t after:from-[#E03609] after:to-[#F0B71F] z-1000;
+  }
 }

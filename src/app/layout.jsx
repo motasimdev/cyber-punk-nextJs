@@ -1,16 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Container from "@/components/Container";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Cyber Punk",
@@ -20,10 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={` antialiased`}
-      >
-       <Header/>
+      <body className={` antialiased h-full relative`}>
+        <Container className="container h-full absolute bg-transparent left-1/2 top-0 -translate-x-1/2 line_left line_right -z-1"></Container>
+        <Header />
         {children}
       </body>
     </html>

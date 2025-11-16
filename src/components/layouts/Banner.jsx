@@ -11,7 +11,7 @@ const Banner = () => {
       <section className="pb-16 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
         <div className={`max-w-[1320px] m-auto ${montserrat.className}`}>
           <div
-            className="pt-[680px] pb-[30px] bg-size-[95%_95%] bg-center bg-no-repeat relative before:absolute before:h-[1420px] before:w-px before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:top-0 before:left-0 after:absolute after:h-[1420px] after:w-px after:content-'' after:bg-linear-to-r after:from-[#e03609] after:to-[#f0b71f] after:top-0 after:right-0"
+            className="pt-[680px] pb-[30px] bg-size-[95%_95%] bg-center bg-no-repeat relative"
             style={{ backgroundImage: "url('/images/banner.png')" }}
           >
             <Image
