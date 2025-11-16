@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <div className="">
-        <nav className="-z-50 py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
+        <nav className="-z-2 py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
           <div className="max-w-[1320px] m-auto">
             <div className="flex items-center justify-between bg-[#010101] px-5 relative">
               <Image
@@ -51,6 +51,9 @@ const Header = () => {
                 </ul>
               </div>
               <div className="">
+                {/* <button className="bg-linear-to-r from-[#f0b71f] to-[#e03609] px-5 py-3 text-[17px] font-semibold text-white rounded-lg hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-colors duration-700 cursor-pointer">
+                  
+                </button> */}
                 <button className="bg-linear-to-r from-[#f0b71f] to-[#e03609] px-5 py-3 text-[17px] font-semibold text-white rounded-lg hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-colors duration-700 cursor-pointer">
                   Get started free
                 </button>

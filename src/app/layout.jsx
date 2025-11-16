@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 
 export const metadata = {
   title: "Cyber Punk",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Container className="container h-full absolute bg-transparent left-1/2 top-0 -translate-x-1/2 line_left line_right -z-1"></Container>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

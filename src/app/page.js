@@ -15,6 +15,7 @@ export default function Home({ children }) {
        <Greetings/>
        <Service/>
        <Goals/>
+       
       </div>
     </>
   );
