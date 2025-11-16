@@ -1,13 +1,27 @@
 import React from "react";
 import Container from "../Container";
 import { montserrat, orbitron } from "../../../fonts/Font";
+import Image from "next/image";
+import union from "../../assets/Union.png";
+import unionR from "../../assets/unionR.png";
 
 const Service = () => {
   return (
     <>
       <section className="pt-[130px] pb-[105px] relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:-bottom-0.5 before:left-0">
         <Container>
-          <div className="">
+          <div className="relative">
+            <Image
+              src={union}
+              alt="icon"
+              className="absolute rotate-90 -bottom-[137px] left-[-31px] z-10"
+            />
+
+            <Image
+              src={unionR}
+              alt="icon"
+              className="absolute rotate-90 -bottom-[137px] right-[-31px] z-10"
+            />
             <h3
               className={`${orbitron.className} text-white text-[52px] font-bold px-50 text-center`}
             >
