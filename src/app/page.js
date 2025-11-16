@@ -2,6 +2,7 @@
 import About from "@/components/layouts/About";
 import Banner from "@/components/layouts/Banner";
 import Greetings from "@/components/layouts/Greetings";
+import Service from "@/components/layouts/Service";
 
 
 export default function Home({ children }) {
@@ -11,6 +12,7 @@ export default function Home({ children }) {
        <Banner/>
        <About/>
        <Greetings/>
+       <Service/>
       </div>
     </>
   );

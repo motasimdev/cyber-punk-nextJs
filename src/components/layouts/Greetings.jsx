@@ -1,16 +1,30 @@
 import React from "react";
 import Container from "../Container";
 import { montserrat, orbitron } from "../../../fonts/Font";
+import union from "../../assets/Union.png";
+import unionR from "../../assets/unionR.png";
+import Image from "next/image";
 
 const Greetings = () => {
   return (
     <>
       <section
         className={
-          "relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0"
+          "relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:-bottom-0.5 before:left-0"
         }
       >
-        <Container>
+        <Container className={"relative"}>
+            <Image
+              src={union}
+              alt="icon"
+              className="absolute rotate-90 -bottom-8 left-[-31px] z-10"
+            />
+
+            <Image
+              src={unionR}
+              alt="icon"
+              className="absolute rotate-90 -bottom-8 right-[-31px] z-10"
+            />
           <div
             className="pt-[150px] pb-[90px] bg-cover bg-center bg-no-repeat relative"
             style={{ backgroundImage: "url('/images/greetingsBg.png')" }}
@@ -96,7 +110,7 @@ const Greetings = () => {
                     <h5
                       className={`${montserrat.className} text-2xl text-white font-medium pr-12`}
                     >
-                     Stories and <br /> Lore
+                      Stories and <br /> Lore
                     </h5>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

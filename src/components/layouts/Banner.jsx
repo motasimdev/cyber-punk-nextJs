@@ -17,13 +17,13 @@ const Banner = () => {
             <Image
               src={union}
               alt="icon"
-              className="absolute bottom-[-94px] left-[-30px]"
+              className="absolute bottom-[-94px] left-[-31px]"
             />
 
             <Image
               src={unionR}
               alt="icon"
-              className="absolute bottom-[-94px] right-[-30px]"
+              className="absolute bottom-[-94px] right-[-31px]"
             />
             <div className="flex">
               <div className="pl-12 w-[46%]">

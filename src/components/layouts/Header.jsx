@@ -14,13 +14,13 @@ const Header = () => {
               <Image
                 src={union}
                 alt="icon"
-                className="absolute bottom-[-70px] left-[-30px]"
+                className="absolute bottom-[-70px] left-[-31px]"
               />
 
               <Image
                 src={unionR}
                 alt="icon"
-                className="absolute bottom-[-70px] right-[-30px]"
+                className="absolute bottom-[-70px] right-[-31px]"
               />
 
               <div className="">

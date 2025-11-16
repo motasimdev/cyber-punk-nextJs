@@ -3,16 +3,30 @@ import Container from "../Container";
 import aboutimg from "../../assets/aboutimg.png";
 import aboutimg2 from "../../assets/about2.png";
 import Image from "next/image";
+import union from "../../assets/Union.png";
+import unionR from "../../assets/unionR.png";
 
 const About = () => {
   return (
     <>
       <section
-        className={"pt-14 pb-18 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0"
+        className={
+          "pt-14 pb-18 relative before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0"
         }
       >
         <Container>
-          <div className="">
+          <div className="relative">
+            <Image
+              src={union}
+              alt="icon"
+              className="absolute bottom-[-102px] left-[-31px]"
+            />
+
+            <Image
+              src={unionR}
+              alt="icon"
+              className="absolute bottom-[-102px] right-[-31px]"
+            />
             <div className="flex items-center justify-between px-7 ">
               <div className="w-[50%] py-10">
                 <h3
@@ -110,11 +124,16 @@ const About = () => {
                 {/* ====== */}
                 <div className="border border-[#F0B71F] rounded-[20px] py-5 pl-7 flex items-center">
                   <div className="">
-                    <Image src={aboutimg2} alt="image" className="w-full"/>
+                    <Image src={aboutimg2} alt="image" className="w-full" />
                   </div>
                   <div className="text-center w-[40%] m-auto py-10">
-                    <h4 className={`${montserrat} text-white text-2xl pb-4`}>Join the Revolution</h4>
-                    <p className={`${montserrat} text-[#dddddd] text-justify`}>Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
+                    <h4 className={`${montserrat} text-white text-2xl pb-4`}>
+                      Join the Revolution
+                    </h4>
+                    <p className={`${montserrat} text-[#dddddd] text-justify`}>
+                      Explore the high-tech, low-life world where the lines
+                      between humanity and machinery blur.
+                    </p>
                   </div>
                 </div>
               </div>
