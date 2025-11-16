@@ -19,13 +19,13 @@ const Goals = () => {
             <Image
               src={union}
               alt="icon"
-              className="absolute rotate-90 -bottom-[112px] left-[-31px] z-10"
+              className="absolute rotate-90 -bottom-28 left-[-31px] z-10"
             />
 
             <Image
               src={unionR}
               alt="icon"
-              className="absolute rotate-90 -bottom-[112px] right-[-31px] z-10"
+              className="absolute rotate-90 -bottom-28 right-[-31px] z-10"
             />
             <div className="w-[40%]">
               <Image src={imageBg} alt="image" className="w-full" />
