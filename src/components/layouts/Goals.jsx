@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container";
 import Image from "next/image";
-import imageBg from "../../assets/imageBg.png";
+import imageBg from "../../../public/images/imageBg.png";
 import { montserrat, orbitron } from "../../../fonts/Font";
 import union from "../../assets/Union.png";
 import unionR from "../../assets/unionR.png";
