@@ -27,10 +27,10 @@ const Goals = () => {
               alt="icon"
               className="absolute rotate-90 -bottom-28 right-[-31px] z-10"
             />
-            <div className="w-[40%]">
+            <div className="max-w-[40%]">
               <Image src={imageBg} alt="image" className="w-full" />
             </div>
-            <div className="w-[50%]">
+            <div className="max-w-[50%]">
               <h4
                 className={`${orbitron.className} font-bold text-[50px] text-white`}
               >
