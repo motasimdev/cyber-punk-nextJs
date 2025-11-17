@@ -1,16 +1,19 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/logo.png";
 import union from "../../assets/Union.png";
 import unionR from "../../assets/unionR.png";
+import { useState } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="">
-        <nav className="-z-2 py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
+      <div className="hidden lg:block">
+        <nav className="py-10 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
           <div className="max-w-[1320px] m-auto">
-            <div className="flex items-center justify-between bg-[#010101] px-5 relative">
+            <div className="z-2000 flex items-center justify-between bg-[#010101] px-5 relative">
               <Image
                 src={union}
                 alt="icon"
@@ -58,6 +61,62 @@ const Header = () => {
                   Get started free
                 </button>
               </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      {/* ====================responsive=================== */}
+      <div className="lg:hidden">
+        <nav className="z-2 py-8 relative bg-[#010101] before:absolute before:h-px before:w-full before:content-'' before:bg-linear-to-r before:from-[#e03609] before:to-[#f0b71f] before:bottom-0 before:left-0">
+          <div className="max-w-[1320px] m-auto">
+            <div className="flex items-center justify-between bg-[#010101] px-5 relative">
+              <Image
+                src={union}
+                alt="icon"
+                className="absolute bottom-[-70px] left-[-31px]"
+              />
+
+              <Image
+                src={unionR}
+                alt="icon"
+                className="absolute bottom-[-70px] right-[-31px]"
+              />
+
+              <div className="">
+                <Image src={logo} alt="logo" />
+              </div>
+
+              <div className={`${menu ? "block" : "hidden "} bg-red-900 `}>
+                <ul className="py-8 px-40 flex flex-col gap-y-5">
+                  <Link href={"/"}>
+                    <li className="text-white font-medium hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-all ease-out duration-300">
+                      Home
+                    </li>
+                  </Link>
+                  <Link href={"/"}>
+                    <li className="text-white font-medium hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-all ease-out duration-300">
+                      Pages
+                    </li>
+                  </Link>
+                  <Link href={"/"}>
+                    <li className="text-white font-medium hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-all ease-out duration-300">
+                      Support
+                    </li>
+                  </Link>
+                  <Link href={"/"}>
+                    <li className="text-white font-medium hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#e03609] hover:to-[#f0b71f] transition-all ease-out duration-300">
+                      Contact
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+              <button
+                className="bg-red-800 cursor-pointer"
+                onClick={() => setMenu(!menu)}
+              >
+                click
+              </button>
             </div>
           </div>
         </nav>

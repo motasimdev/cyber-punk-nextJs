@@ -10,7 +10,7 @@ body {
 
 @layer components {
   .line_left {
-    @apply before:content-[''] before:absolute before:-left-0.5 before:h-full before:w-0.5 before:bg-linear-to-b before:from-[#E03609] before:to-[#F0B71F] z-1000;
+    @apply before:content-[''] before:absolute before:-left-0.5 before:h-full before:w-0.5 before:bg-linear-to-b before:from-[#E03609] before:to-[#F0B71F] z-2000;
   }
 
   .line_right {
